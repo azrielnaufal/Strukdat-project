@@ -1,0 +1,49 @@
+1. dalam tubes kami, saya membuat menu invite user, menu buat user dan grup,
+dan menu show. di atas adalah prosedur besar yang berisi kumpulan 
+prosedur kecil, sehingga prosedur kecil itu juga saya yang buat..
+
+2. total ada 41 prosedur dan fungsi.
+
+3. model 1, dimana kami membuat 2 list yaitu list grup dan user
+di list grup terdapat list Relasi atau yang biasa disebut edge
+untuk menunjuk ke user tertentu.
+
+4. 
+void insertLastRelasi(adrGrup &P, adrRelasi &R){
+    string nama = info(relasi(R)).nama_user;
+    if (firstRelasi(P) == NULL){
+        firstRelasi(P) = R;
+        cout<<"INVITE BERHASIL!!!!!"<<endl;
+    }else {
+        if (searchingRelasi(P,nama) == NULL){
+            adrRelasi i = firstRelasi(P);
+            while (next(i) != NULL){
+                i = next(i);
+            }
+            next(i) = R;
+            prev(R) = i;
+            cout<<"INVITE BERHASIL!!!!!"<<endl;
+        }else {
+            cout<<"INVITE GAGAL, USER SUDAH ADA DALAM GRUP!!!"<<endl;
+        }
+    }
+}
+
+5. 
+void insertParent(Parent &G, adrParent &P){
+    string nama = info(P).nama_Parent;
+    if (isEmptyParent(G) == true){
+        first(G) = P;
+        last(G) = P;
+        cout<<"PEMBUATAN PARENT BERHASIL!!!!"<<endl;
+    }else {
+        if (searchingParent(G,nama) == NULL){
+            next(last(G)) = P;
+            prev(P) = last(G);
+            last(G) = P;
+            cout<<"PEMBUATAN PARENT BERHASIL!!!!"<<endl;
+        }else {
+            cout<<"GAGAL, KARENA PARENT SUDAH TERDAFTAR!!!!"<<endl;
+        }
+    }
+}

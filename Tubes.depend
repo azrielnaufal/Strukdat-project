@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1587973479 source:d:\kuliah online\std\new folder\almostfin\tubes\tubes\bismillah.cpp
+	"bismillah.h"
+
+1587972086 d:\kuliah online\std\new folder\almostfin\tubes\tubes\bismillah.h
+	<iostream>
+
+1587892894 source:d:\kuliah online\std\new folder\almostfin\tubes\tubes\main.cpp
+	<iostream>
+	"bismillah.h"
+
+1588142011 source:d:\documents\aa studi telkom\struktur data\tubes\aa final\tubes\tubes\bismillah.cpp
+	"bismillah.h"
+
+1587972086 d:\documents\aa studi telkom\struktur data\tubes\aa final\tubes\tubes\bismillah.h
+	<iostream>
+
+1588142451 source:d:\documents\aa studi telkom\struktur data\tubes\aa final\tubes\tubes\main.cpp
+	<iostream>
+	"bismillah.h"
+
